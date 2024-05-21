@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar Garrafa - LT Personalizados</title>
+    <link rel="stylesheet" href="customize.css" />
+</head>
+<body>
+
+    <div id="customization-container">
+        <div id="product-image-container">
+            <img id="product-image" src="Imagens/Imagem-000.png" alt="Garrafa Personalizada">
+            <div id="text-preview"></div>
+        </div>
+        
+        <div id="options-container">
+            <label for="color-select">Escolha a cor:</label>
+            <select id="color-select">
+                <option value="red">Vermelho</option>
+                <option value="blue">Azul</option>
+                <option value="green">Verde</option>
+                <!-- Adicione mais opções de cores aqui -->
+            </select>
+
+            <label for="font-select">Escolha a fonte:</label>
+            <select id="font-select">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <!-- Adicione mais opções de fontes aqui -->
+            </select>
+
+            <label for="custom-text">Texto personalizado:</label>
+            <input type="text" id="custom-text" placeholder="Digite seu texto aqui">
+            
+            <br><br>
+
+            <button id="apply-button">Aplicar</button>
+        </div>
+    </div>
+
+    <script src="customize.js"></script>
+</body>
+</html>
