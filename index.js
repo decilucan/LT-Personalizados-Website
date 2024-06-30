@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         filterProducts({ filter: searchText });
     });
 
-    document.querySelector('#navbar ul li a[href="#"]').addEventListener('click', (event) => {
+    document.getElementById('show-all').addEventListener('click', (event) => {
         event.preventDefault();
         renderProducts(products);
     });

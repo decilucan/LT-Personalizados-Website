@@ -1,5 +1,5 @@
-body{
-    margin: 0%;
+body {
+    margin: 0;
     font-family: 'Arial', sans-serif;
 }
 
@@ -19,8 +19,9 @@ body{
 }
 
 #product-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    max-width: 100%;
     border-radius: 4px;
 }
 
@@ -47,7 +48,7 @@ body{
 }
 
 #options-container button {
-    background-color: hsl(286,71%,66%);
+    background-color: hsl(286, 71%, 66%);
     color: white;
     border: none;
     cursor: pointer;
@@ -55,18 +56,99 @@ body{
 }
 
 #options-container button:hover {
-    background-color: hsl(286,71%,56%);
+    background-color: hsl(286, 71%, 56%);
 }
 
 #text-preview {
-    /* ... seus estilos anteriores ... */
-    border: 5px solid black; /* Borda grossa */
+    border: 5px solid black;
     padding: 10px;
     display: inline-block;
-    background: white; /* Fundo branco para melhor legibilidade */
-    max-width: calc(100% - 20px); /* Garante que o texto não ultrapasse a largura da imagem */
+    background: white;
+    max-width: calc(100% - 20px);
     box-sizing: border-box;
-    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+    text-overflow: ellipsis;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1200px) {
+    #customization-container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #options-container label,
+    #options-container select,
+    #options-container input,
+    #options-container button {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    #text-preview {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #customization-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #options-container label,
+    #options-container select,
+    #options-container input,
+    #options-container button {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    #text-preview {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #customization-container {
+        width: 95%;
+        padding: 8px;
+    }
+
+    #options-container label,
+    #options-container select,
+    #options-container input,
+    #options-container button {
+        padding: 5px;
+        font-size: 0.7rem;
+    }
+
+    #text-preview {
+        padding: 5px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #customization-container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    #options-container label,
+    #options-container select,
+    #options-container input,
+    #options-container button {
+        padding: 4px;
+        font-size: 0.6rem;
+    }
+
+    #text-preview {
+        padding: 4px;
+        font-size: 0.6rem;
+    }
 }
