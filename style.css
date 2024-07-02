@@ -84,7 +84,31 @@ nav ul li ul.dropdown li a {
 }
 
 nav ul li ul.dropdown li a:hover {
-    background-color: #b025da;
+    background-color: #9d28c1;
+}
+
+nav button{
+    color: #000000;
+    background-color: transparent;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav button:hover{
+    background-color: #9d28c1;
+    border-color: #000000;
+    color: #fff;
+}
+
+nav button#menuButton{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
 }
 
 .main{
