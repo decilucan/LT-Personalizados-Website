@@ -117,6 +117,8 @@ nav .social-links{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 120px;
 }
 
 .instruções .intru-items .item{
