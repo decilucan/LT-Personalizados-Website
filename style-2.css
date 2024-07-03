@@ -58,48 +58,32 @@ footer .top ul{
     gap: 60px;
 }
 
+nav button{
+    color: #000000;
+    background-color: transparent;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav button:hover{
+    background-color: #9d28c1;
+    border-color: #000000;
+    color: #fff;
+}
+
+nav button#menuButton{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+
 nav .social-links{
     font-size: 26px;
-}
-
-.main{
-    background-color: #deebee;
-    padding: 90px 85px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.main .left{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.main .left h3{
-    margin-top: 0px;
-    font-weight: bold;
-    font-size: 46px;
-}
-
-.main .left p{
-    font-size: 22px;
-    margin-top: 20px;
-}
-
-.main .left button{
-    margin-top: 40px;
-    color: #fff;
-    cursor: pointer;
-    background-color: #c96be6;
-    padding: 14px 24px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-}
-
-.main .right img{
-    width: 300px;
 }
 
 .instruções{
@@ -111,16 +95,19 @@ nav .social-links{
     align-items: center;
     justify-content:center;
     margin-bottom: 60px;
+
 }
 
 .instruções .intru-items{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 120px;
 }
 
 .instruções .intru-items .item{
-    width: 30%;
+    width: 20%;
     background-color: #fff;
     border-radius: 10px;
     border-bottom: 4px solid transparent;
@@ -135,7 +122,7 @@ nav .social-links{
 
 .instruções .intru-items .item img{
     width: 100%;
-    height: 240px;
+    height: 420px;
     object-fit: cover;
     object-position: top;
     border-radius: 10px 10px 20px 20px;
@@ -144,12 +131,12 @@ nav .social-links{
 .instruções .intru-items .item .info{
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 16px;
     padding: 20px 32px 42px;
 }
 
 .instruções .intru-items .item .info p{
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .instruções .intru-items .item .info a{
